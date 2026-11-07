@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavin Prasad PV - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#000000',
+                            card: '#0a0a0a',
+                            border: '#222222',
+                            accent: '#3b82f6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        .glow {
+            background: radial-gradient(circle 600px at 50% 0px, rgba(59, 130, 246, 0.15), transparent 80%);
+        }
+    </style>
+</head>
+<body class="bg-black text-slate-100 min-h-screen font-sans selection:bg-blue-500 selection:text-white grid-pattern relative overflow-x-hidden">
+
+    <!-- Radial Background Glow -->
+    <div class="glow fixed inset-0 pointer-events-none"></div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-black/60 border-b border-neutral-800">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+                KP.
+            </span>
+            <nav class="flex items-center gap-6 text-sm text-neutral-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#education" class="hover:text-white transition">Education</a>
+                <a href="#connect" class="hover:text-white transition">Connect</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 pt-16 pb-24 relative z-10 space-y-16">
+
+        <!-- Hero Section -->
+        <section class="space-y-6 pt-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Open to Opportunities
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                Kavin Prasad PV
+            </h1>
+            
+            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl leading-relaxed">
+                Engineering student passionate about tech, software development, and modern web applications. Currently studying at Sri Sairam Engineering College.
+            </p>
+
+            <!-- Social Action Links -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="https://linkedin.com/in/Kavin Prasad PV" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white text-black font-medium text-sm hover:bg-neutral-200 transition">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                </a>
+                <a href="https://github.com/kavinprasad2008-bit" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-200 font-medium text-sm hover:bg-neutral-800 transition">
+                    <i data-lucide="github" class="w-4 h-4"></i> GitHub
+                </a>
+                <a href="#connect" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-300 font-medium text-sm hover:bg-neutral-800 transition">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Contact
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="space-y-4">
+            <h2 class="text-xl font-semibold text-white flex items-center gap-2">
+                <i data-lucide="user" class="w-5 h-5 text-blue-400"></i> About
+            </h2>
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm text-neutral-300 leading-relaxed space-y-3">
+                <p>
+                    Hello! I'm <strong class="text-white">Kavin Prasad PV</strong>. I am dedicated to continuously building my knowledge in technology, problem-solving, and building software solutions.
+                </p>
+                <p>
+                    I enjoy hands-on development, exploring new tech stacks, and working on collaborative projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="space-y-4">
+            <h2 class="text-xl font-semibold text-white flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-400"></i> Education
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- College -->
+                <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm space-y-2 hover:border-neutral-700 transition">
+                    <span class="text-xs font-mono text-blue-400 uppercase tracking-wider">Higher Education</span>
+                    <h3 class="text-lg font-bold text-white">Sri Sairam Engineering College</h3>
+                    <p class="text-sm text-neutral-400">College / Undergraduate Studies</p>
+                </div>
+
+                <!-- School -->
+                <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm space-y-2 hover:border-neutral-700 transition">
+                    <span class="text-xs font-mono text-neutral-400 uppercase tracking-wider">Schooling</span>
+                    <h3 class="text-lg font-bold text-white">St. Johns. Mat. Hr. Sec. School</h3>
+                    <p class="text-sm text-neutral-400">Secondary / Higher Secondary Education</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profiles / Connect Section -->
+        <section id="connect" class="space-y-4">
+            <h2 class="text-xl font-semibold text-white flex items-center gap-2">
+                <i data-lucide="globe" class="w-5 h-5 text-blue-400"></i> Connect & Profiles
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://linkedin.com/in/Kavin Prasad PV" target="_blank" rel="noopener noreferrer" 
+                   class="p-5 rounded-xl bg-neutral-900/60 border border-neutral-800/80 flex items-center justify-between group hover:border-blue-500/50 transition">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-neutral-400">LinkedIn</p>
+                            <p class="text-sm font-semibold text-white">Kavin Prasad PV</p>
+                        </div>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+                </a>
+
+                <a href="https://github.com/kavinprasad2008-bit" target="_blank" rel="noopener noreferrer" 
+                   class="p-5 rounded-xl bg-neutral-900/60 border border-neutral-800/80 flex items-center justify-between group hover:border-blue-500/50 transition">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 rounded-lg bg-neutral-800 text-neutral-300 group-hover:bg-white group-hover:text-black transition">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-neutral-400">GitHub</p>
+                            <p class="text-sm font-semibold text-white">kavinprasad2008-bit</p>
+                        </div>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-800/60 py-8 text-center text-xs text-neutral-500">
+        <p>© Kavin Prasad PV. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
